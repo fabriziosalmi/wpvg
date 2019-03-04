@@ -1,3 +1,5 @@
+<?php
+
 /*
 Plugin Name: WPVG
 Version: 0.1
