@@ -14,9 +14,9 @@ function wpvg_create_menu() {
 
 function register_wpvg_settings() {
 	//register our settings
-	register_setting( 'wpvg-settings-group', 'new_option_name' );
-	register_setting( 'wpvg-settings-group', 'some_other_option' );
-	register_setting( 'wpvg-settings-group', 'option_etc' );
+	register_setting( 'wpvg-settings-group', 'clientid' );
+	register_setting( 'wpvg-settings-group', 'apikey' );
+	register_setting( 'wpvg-settings-group', 'apisecret' );
 }
 
 function wpvg_settings_page() {
@@ -30,17 +30,17 @@ function wpvg_settings_page() {
     <table class="form-table">
         <tr valign="top">
         <th scope="row">CLIENT ID</th>
-        <td><input type="text" name="new_option_name" value="<?php echo esc_attr( get_option('new_option_name') ); ?>" /></td>
+        <td><input type="text" name="new_option_name" value="<?php echo esc_attr( get_option('clientid') ); ?>" /></td>
         </tr>
          
         <tr valign="top">
         <th scope="row">API KEY</th>
-        <td><input type="text" name="some_other_option" value="<?php echo esc_attr( get_option('some_other_option') ); ?>" /></td>
+        <td><input type="text" name="some_other_option" value="<?php echo esc_attr( get_option('apikey') ); ?>" /></td>
         </tr>
         
         <tr valign="top">
         <th scope="row">API SECRET</th>
-        <td><input type="text" name="option_etc" value="<?php echo esc_attr( get_option('option_etc') ); ?>" /></td>
+        <td><input type="text" name="option_etc" value="<?php echo esc_attr( get_option('apisecret') ); ?>" /></td>
         </tr>
     </table>
     
