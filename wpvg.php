@@ -6,4 +6,4 @@ Author: fabrizio.salmi@gmail.com
 Author URI: https://mysite.com
 */
 
-include('wpvg_options.php');
+require('wpvg_options.php');
