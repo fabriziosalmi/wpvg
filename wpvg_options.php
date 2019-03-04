@@ -29,17 +29,17 @@ function wpvg_settings_page() {
     <?php do_settings_sections( 'wpvg-settings-group' ); ?>
     <table class="form-table">
         <tr valign="top">
-        <th scope="row">Enabled</th>
+        <th scope="row">CLIENT ID</th>
         <td><input type="text" name="new_option_name" value="<?php echo esc_attr( get_option('new_option_name') ); ?>" /></td>
         </tr>
          
         <tr valign="top">
-        <th scope="row">API URL</th>
+        <th scope="row">API KEY</th>
         <td><input type="text" name="some_other_option" value="<?php echo esc_attr( get_option('some_other_option') ); ?>" /></td>
         </tr>
         
         <tr valign="top">
-        <th scope="row">API KEY</th>
+        <th scope="row">API SECRET</th>
         <td><input type="text" name="option_etc" value="<?php echo esc_attr( get_option('option_etc') ); ?>" /></td>
         </tr>
     </table>
